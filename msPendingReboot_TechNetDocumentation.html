@@ -4,15 +4,15 @@
             <div id="longDesc">
                 <span style="font-family:Calibri; font-size:medium">
                     <p>
-                        The<strong> xPendingReboot</strong> module is a part of the Windows PowerShell Desired State Configuration (DSC) Resource Kit, which is a collection of DSC Resources produced by the PowerShell Team. This module contains the xPendingReboot resource. xPendingReboot examines three specific registry locations where a Windows Server might indicate that a reboot is pending and allows DSC to predictably handle the condition. 
+                        The<strong> msPendingReboot</strong> module is a part of the Windows PowerShell Desired State Configuration (DSC) Resource Kit, which is a collection of DSC Resources produced by the PowerShell Team. This module contains the msPendingReboot resource. msPendingReboot examines three specific registry locations where a Windows Server might indicate that a reboot is pending and allows DSC to predictably handle the condition. 
                     </p>
                     <p>
-                        <strong>All of the resources in the DSC Resource Kit are provided AS IS, and are not supported through any Microsoft standard support program or service. The &quot;x&quot; in xPendingReboot stands for experimental</strong>, which means that these resources will
+                        <strong>All of the resources in the DSC Resource Kit are provided AS IS, and are not supported through any Microsoft standard support program or service. The &quot;x&quot; in msPendingReboot stands for experimental</strong>, which means that these resources will
                         be <strong>fix forward</strong> and monitored by the module owner(s).
                     </p>
                     <p>Please leave comments, feature requests, and bug reports in the Q &amp; A tab for this module.</p>
                     <p>
-                        If you would like to modify <strong>xPendingReboot</strong> module, feel free. When modifying, please update the module name, resource friendly name, and MOF class name (instructions below). As specified in the license, you may copy or modify this resource
+                        If you would like to modify <strong>msPendingReboot</strong> module, feel free. When modifying, please update the module name, resource friendly name, and MOF class name (instructions below). As specified in the license, you may copy or modify this resource
                         as long as they are used on the Windows Platform.
                     </p>
                     <p>
@@ -26,14 +26,14 @@
                         <a href="http://go.microsoft.com/fwlink/?LinkID=389546"><span style="color:#0000ff">this blog post</span></a>.
                     </p>
                     <h1 style="color:#2e74b5; font-family:Calibri Light; font-size:large">Installation</h1>
-                    <p>To install <strong>xPendingReboot</strong> module</p>
+                    <p>To install <strong>msPendingReboot</strong> module</p>
                     <ul style="list-style-type:disc; direction:ltr">
                         <li>Unzip the content under $env:ProgramFiles\WindowsPowerShell\Modules folder </li>
                     </ul>
                     <p>To confirm installation:</p>
                     <ul style="list-style-type:disc; direction:ltr">
                         <li>
-                            Run <strong>Get-DSCResource</strong> to see that <strong>xPendingReboot</strong> is among the DSC Resources listed
+                            Run <strong>Get-DSCResource</strong> to see that <strong>msPendingReboot</strong> is among the DSC Resources listed
                         </li>
                     </ul>
                     <h1 style="color:#2e74b5; font-family:Calibri Light; font-size:large">Requirements</h1>
@@ -44,14 +44,14 @@
                     </p>
                     <h1 style="color:#2e74b5; font-family:Calibri Light; font-size:large">Description</h1>
                     <p>
-                        The <strong>xPendingReboot</strong> module containes the <strong>xPendingReboot</strong> resource, which examines three specific registry locations where a Windows Server might indicate that a reboot is pending, and allows DSC to predictably handle the condition.  
+                        The <strong>msPendingReboot</strong> module containes the <strong>msPendingReboot</strong> resource, which examines three specific registry locations where a Windows Server might indicate that a reboot is pending, and allows DSC to predictably handle the condition.  
                         PowerShell Desired State Configuration determines how to handle pending reboot conditions using the Local Configuration Management setting RebootNodeIfNeeded.  
                         When DSC resources require reboot, within a Set statement in a DSC Resource the global variable DSCMachineStatus is set to value “1”.  
                         When this condition occurs and RebootNodeIfNeeded is set to “True”, DSC reboots the machine after a successful Set.  Otherwise, the reboot is postponed.
                         
                     </p>
                     <h1 style="color:#2e74b5; font-family:Calibri Light; font-size:large">Details</h1>
-                    <p><strong>xPendingReboot</strong> resource has following properties:</p>
+                    <p><strong>msPendingReboot</strong> resource has following properties:</p>
                     <ul style="list-style-type:disc; direction:ltr">
                         <li>
                             <strong>Name</strong>:<span>
@@ -82,17 +82,17 @@
                                     <strong>c<span style="font-family:Calibri; font-size:medium"><strong>PendingReboot</strong></span></strong>)
                                 </li>
                                 <li>
-                                    <strong>Resource folder (ex: MSFT_</strong><span style="font-family:Calibri; font-size:medium"><strong>xPendingReboot</strong></span> becomes
+                                    <strong>Resource folder (ex: MSFT_</strong><span style="font-family:Calibri; font-size:medium"><strong>msPendingReboot</strong></span> becomes
                                     <strong>Contoso_x</strong><span style="font-family:Calibri; font-size:medium"><strong>PendingReboot</strong></span>)
                                 </li>
                                 <li>
-                                    <strong>Resource Name (ex: MSFT_<span style="font-family:Calibri; font-size:medium"><strong>xPendingReboot</strong></span></strong> becomes
+                                    <strong>Resource Name (ex: MSFT_<span style="font-family:Calibri; font-size:medium"><strong>msPendingReboot</strong></span></strong> becomes
                                     <strong>Contoso_c</strong><span style="font-family:Calibri; font-size:medium"><strong>PendingReboot</strong></span>)
                                 </li>
                                 <li>
                                     <strong>
                                         Resource Friendly Name (ex: <span style="font-family:Calibri; font-size:medium">
-                                            <strong>xPendingReboot</strong>
+                                            <strong>msPendingReboot</strong>
                                         </span>
                                     </strong>becomes <strong>c<span style="font-family:Calibri; font-size:medium"><strong>PendingReboot</strong></span></strong>)
                                 </li>
@@ -123,7 +123,7 @@
                             Initial release with the following resources
                             <ul style="list-style-type:circle">
                                 <li>
-                                    <span style="font-family:Calibri; font-size:medium">xPendingReboot</span>
+                                    <span style="font-family:Calibri; font-size:medium">msPendingReboot</span>
                                 </li>
                             </ul>
                         </li>
@@ -133,7 +133,7 @@
                         Example: Identify if reboots are pending and if so, reboot immediately (managed by DSC)
                     </h1>
                     <p>
-                        This configuration leverages xPendingReboot and sets the LCM setting to allow automatic reboots.
+                        This configuration leverages msPendingReboot and sets the LCM setting to allow automatic reboots.
                     </p>
                     <div class="scriptcode">
                         <div class="pluginEditHolder" plugincommand="mceScriptCode">
@@ -144,7 +144,7 @@
 {        
     Node &lsquo;NodeName&rsquo; 
     {  
-        xPendingReboot Reboot1
+        msPendingReboot Reboot1
         { 
             Name = &lsquo;BeforeSoftwareInstall&rsquo;
         }
@@ -161,7 +161,7 @@
 {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;Node&nbsp;&lsquo;NodeName&rsquo;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xPendingReboot&nbsp;Reboot1&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msPendingReboot&nbsp;Reboot1&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;=&nbsp;&lsquo;BeforeSoftwareInstall&rsquo;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
@@ -182,7 +182,7 @@
                     <h1 style="margin-bottom:0pt; font-family:Calibri Light; color:#2e74b5; font-size:large">
                                 Example: Identify if reboots are pending but do not automatically reboot (managed by DSC)
                     </h1>
-                    <p>This configuration will install the hotfix from a URI that is connected to a particular hotfix ID.  This configuration leverages xPendingReboot and sets the LCM setting to allow automatic reboots..</p>
+                    <p>This configuration will install the hotfix from a URI that is connected to a particular hotfix ID.  This configuration leverages msPendingReboot and sets the LCM setting to allow automatic reboots..</p>
                     <p>&nbsp;</p>
                     <div class="scriptcode">
                         <div class="pluginEditHolder" plugincommand="mceScriptCode">
@@ -193,7 +193,7 @@
 {        
     Node &lsquo;NodeName&rsquo; 
     {  
-        xPendingReboot Reboot1
+        msPendingReboot Reboot1
         { 
             Name = &lsquo;BeforeSoftwareInstall&rsquo;
         }
@@ -209,7 +209,7 @@
 {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;Node&nbsp;&lsquo;NodeName&rsquo;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xPendingReboot&nbsp;Reboot1&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msPendingReboot&nbsp;Reboot1&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;=&nbsp;&lsquo;BeforeSoftwareInstall&rsquo;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
